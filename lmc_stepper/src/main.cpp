@@ -6,12 +6,13 @@ const int in3 = 10;
 const int in4 = 11;
 
 // example input: d:1,s:3,t:1000#
-// d = direction -1/1
+// d = direction -1/1. 0 = stop
 // s = speed 1 fastest = delay in ms between steps
 // t = time of move in ms
 
-// d:-1,s:1,t:500#
+// d:-1,s:1,t:15000#
 // d:-1,s:5,t:500#
+// d:0#
 
 const unsigned char steps[] = {0x01,0x03,0x02,0x06,0x04,0x0c,0x08,0x09};
 typedef struct {
